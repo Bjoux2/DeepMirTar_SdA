@@ -819,5 +819,5 @@ class SdA(object):
     def predict(self, test_set_x):
         predict_model = theano.function(inputs=[self.x], outputs=self.pred)
         predict_proba = predict_model(test_set_x)
-        predict = T.argmax(predict_proba, axis=1)
+        predict = numpy.argmax(predict_proba, axis=1)
         return predict
