@@ -4,7 +4,9 @@ The usage of the SdA is similar to sklean:
 
 e.g．
 sda_classifier = SdA()
+
 sda_classifier.pretraining(train_x) # unsupervised pretraning
+
 sda_classifier.finetuning(train_x, train_y, valid_x, valid_y) # superinvised traning, the valid set is used to 
                                                               # optimize the parameters
 y_pred = sda_classifier.predict(test_y)
