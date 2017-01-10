@@ -11,13 +11,13 @@ X = min_max_scaler.transform(X)
 print X.shape
 print Y.shape
 
-train_set_x = shared_dataset_x(X[:5000])
-valid_set_x = shared_dataset_x(X[5000:6500])
-test_set_x = X[6500:]
+train_set_x = shared_dataset_x(X[:500])
+valid_set_x = shared_dataset_x(X[500:650])
+test_set_x = X[650:]
 
-train_set_y = shared_dataset_y(Y[:5000])
-valid_set_y = shared_dataset_y(Y[5000:6500])
-test_set_y = Y[6500:]
+train_set_y = shared_dataset_y(Y[:500])
+valid_set_y = shared_dataset_y(Y[500:650])
+test_set_y = Y[650:]
 
 
 print 'loading data finished...'
