@@ -3,9 +3,9 @@ from load_data import load_data
 import pickle
 
 datasets = load_data()
-test_set_x, test_set_y = datasets[2]
-train_set_x, train_set_y = datasets[0]
 valid_set_x, valid_set_y = datasets[1]
+train_set_x, train_set_y = datasets[0]
+test_set_x, test_set_y = datasets[2]
 
 test_set_x = test_set_x.get_value()
 
@@ -22,6 +22,6 @@ with open('SdA_best_model.pkl', 'wb') \
 test_y_pred_proba = sda.predict_proba(test_set_x)
 test_y_pred = sda.predict(test_set_x)
 
-print test_y_pred_proba
-print test_y_pred
-print test_set_y
+print test_y_pred_proba[0:20]
+print test_y_pred[0:20]
+print test_set_y[0:20]
