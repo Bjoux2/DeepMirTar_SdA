@@ -15,7 +15,7 @@ sda_classifier.finetuning(train_x, train_y, valid_x, valid_y)    # the valid set
 
 y_pred = sda_classifier.predict(test_y)
 
-More detaild example see test_SdA.py
+More detaild example, see test_SdA.py
 
 # Dependencies:
 
