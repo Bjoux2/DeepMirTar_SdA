@@ -8,7 +8,7 @@ sda_classifier = SdA()
 
 sda_classifier.pretraining(train_x) 
 
-sda_classifier.finetuning(train_x, train_y, valid_x, valid_y) # the valid set is used to optimize the parameters
+sda_classifier.finetuning(train_x, train_y, valid_x, valid_y)    # the valid set is used to optimize the parameters
 
 y_pred = sda_classifier.predict(test_y)
 
