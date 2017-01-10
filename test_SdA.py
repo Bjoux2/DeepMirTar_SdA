@@ -24,4 +24,4 @@ test_y_pred = sda.predict(test_set_x)
 
 print test_y_pred_proba[0:20]
 print test_y_pred[0:20]
-print test_set_y[0:20]
+print test_set_y.get_value()[0:20]
