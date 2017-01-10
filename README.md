@@ -3,6 +3,6 @@ Deep learning based functional site-level and UTR-level human miRNA target predi
 
 Dependencies:
 
-1), python, latest version
+1), python 2.7, latest version
 
 2), theano, latest version
