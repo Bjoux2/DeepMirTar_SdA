@@ -5,6 +5,8 @@ The usage of the SdA is similar to sklean:
 
 # pseudo-example:
 
+from SdA_wm import SdA
+
 sda_classifier = SdA()
 
 sda_classifier.pretraining(train_x) 
