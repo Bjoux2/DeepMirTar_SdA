@@ -1,5 +1,5 @@
 # DeepMirTar
-Stack denoising autoencoder (SdA) code of "Deep learning based functional site-level and UTR-level human miRNA target prediction". The code was rewrited from www.deeplearning.net 
+Stack denoising autoencoder (SdA) code of "Deep learning based functional site-level and UTR-level human miRNA target prediction". The code was rewritten from www.deeplearning.net 
 
 The usage of the SdA is similar to sklean:
 
