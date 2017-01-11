@@ -2,7 +2,6 @@ from SdA_wm import SdA
 from load_data import load_data
 import pickle
 from sklearn.preprocessing import MinMaxScaler
-from utilis import shared_dataset_x, shared_dataset_y
 
 X, Y = load_data()
 min_max_scaler = MinMaxScaler()  ## min max scaler
@@ -11,12 +10,12 @@ X = min_max_scaler.transform(X)
 print X.shape
 print Y.shape
 
-train_set_x = shared_dataset_x(X[:500])
-valid_set_x = shared_dataset_x(X[500:650])
+train_set_x = X[:500]
+valid_set_x = X[500:650]
 test_set_x = X[650:]
 
-train_set_y = shared_dataset_y(Y[:500])
-valid_set_y = shared_dataset_y(Y[500:650])
+train_set_y = Y[:500]
+valid_set_y = Y[500:650]
 test_set_y = Y[650:]
 
 
