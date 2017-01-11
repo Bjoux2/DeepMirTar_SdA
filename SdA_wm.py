@@ -9,7 +9,7 @@ import numpy
 import theano
 import theano.tensor as T
 from theano.sandbox.rng_mrg import MRG_RandomStreams as RandomStreams
-from sklearn.preprocessing import MinMaxScaler, Normalizer, StandardScaler
+from utilis import shared_dataset_x, shared_dataset_y
 
 
 class HiddenLayer(object):
@@ -690,7 +690,7 @@ class SdA(object):
         return train_fn, valid_score
 
     def pretraining(self, pre_train_set_x):
-
+        pre_train_set_x = shared_dataset_x(pre_train_set_x)
         print('... getting the pretraining functions')
         pretraining_fns = self.pretraining_functions(pre_train_set_x=pre_train_set_x)
 
@@ -720,18 +720,10 @@ class SdA(object):
         # end-snippet-4
 
     def finetuning(self, train_set_x, train_set_y, valid_set_x, valid_set_y):
-
-        # # data preprocessing / use self.preprocessing.transfer(test_set_x) to handle test set
-        # # this is for convenient prediction, not for training
-        if self.preprocessing_method == 'MinMaxScaler':
-            self.preprocessing = MinMaxScaler()  # # min max scaler
-            self.preprocessing.fit(train_set_x.get_value())
-        elif self.preprocessing_method == 'Normalizer':
-            self.preprocessing = Normalizer(norm='l2')  # l1, l2, or max
-            self.preprocessing.fit(train_set_x.get_value())
-        elif self.preprocessing_method == 'StandardScaler':
-            self.preprocessing = StandardScaler()  # l1, l2, or max
-            self.preprocessing.fit(train_set_x.get_value())
+        train_set_x = shared_dataset_x(train_set_x)
+        train_set_y = shared_dataset_y(train_set_y)
+        valid_set_x = shared_dataset_x(valid_set_x)
+        valid_set_y = shared_dataset_y(valid_set_y)
 
         # get the training, validation and testing function for the model
         print('... getting the finetuning functions')
