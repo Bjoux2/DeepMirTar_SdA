@@ -22,3 +22,9 @@ y_pred = sda_classifier.predict(test_y)
 1), python 2.7, latest version
 
 2), theano, latest version
+
+# Further reading: 
+
+A collection of all the existing miRNA target gene prediction papers and some miRNA related databases.
+
+https://github.com/Bjoux2/Existing-miRNA-target-gene-prediction-papers
