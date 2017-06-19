@@ -32,7 +32,7 @@ y_pred = sda_classifier.predict(test_y)
 
 ## Further reading: 
 
-1), A collection of all the existing miRNA target gene prediction papers and some miRNA related databases.
+1), A collection of miRNA target gene prediction papers and some miRNA related databases.
 
 https://github.com/Bjoux2/Existing-miRNA-target-gene-prediction-papers
 
