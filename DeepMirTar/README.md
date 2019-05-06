@@ -1,7 +1,7 @@
 
 The DeepMirTar can be freely download at [[google drive]](https://drive.google.com/file/d/1LqOhB_Z0-CTJZD3Tnh3V6tDCoqBkhDGs/view?usp=sharing)
 
-## Version 0.1
+### Version 0.1
 
 > Caution: This is a developer preview. 
 
