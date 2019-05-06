@@ -5,6 +5,6 @@ The DeepMirTar can be freely download at [[google drive]](https://drive.google.c
 
 > Caution: This is a developer preview. 
 
-Since Theano package and Python2.7 are not updated in the future, and the configuration of dependences of orignal model is difficult, I changed to use Tensorflow/Keras and Python 3.6. 
+Since Theano is no longer update and Python2.7 will not support in 2020, and the configure of dependences of orignal model is difficult, I changed to use Tensorflow/Keras and Python 3.6. 
 
-A new model is trained (the data used in the training the model is identical as original). The model in this version is not well optimised. A better model will be released in few days. 
+A new model was trained (the data used in the training the model is identical as original). The model in this version is not well optimised. A better model will be released in few days. 
